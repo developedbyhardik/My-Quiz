@@ -19,6 +19,9 @@
 </script>
 
 <div>
+    <div class="title">
+        <h1>My Quiz</h1>
+    </div>
     <DropDown options={NumberOfQuestion} on:amount={(event)=>amount.update
         ((n)=>
         {return {...n,value:event.detail.selected}}
@@ -40,6 +43,11 @@
 </div>
 
 <style>
+       .title{
+        font-family: var(--bodyFont);
+        text-align: center;
+        padding-top: 2rem;
+    }
     .start{
         width: 10%;
         padding:12px 0;

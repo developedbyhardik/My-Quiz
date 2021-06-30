@@ -40,8 +40,7 @@
 
 </script>
 
-    <div>
-        
+    <div class="quiz">
         {#if (currentQuestion) == $amount.value}
             <Modal>
                 <h3>Very Good You Completed The Quiz 🔥🔥</h3>
@@ -77,3 +76,10 @@
         {/if}
         
     </div>
+
+    <style>
+        /* .quiz{
+
+        } */
+    
+    </style>

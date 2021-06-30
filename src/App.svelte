@@ -8,9 +8,6 @@
 
 
     <div class='App'>
-        <div class="title">
-            <h1>My Quiz</h1>
-        </div>
         {#if $isStart}
             <Quiz/>
         {:else}
@@ -31,11 +28,7 @@
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
     }
-    .title{
-        font-family: var(--bodyFont);
-        text-align: center;
-        padding-top: 2rem;
-    }
+ 
     .starter{
         padding: 2rem;
         margin: 0 auto;
