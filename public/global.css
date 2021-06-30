@@ -210,9 +210,16 @@ form {
     margin-bottom: 2rem;
     font-family: var(--headingFont);
     font-size: 1rem;
+    appearance: none;
     border: 2px solid var(--black-40);
     border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-color: var(--white-40);
+    background-image: url('/Assets/down-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position:right 15px top 50%;
     letter-spacing: 0.5px;
   }
 
