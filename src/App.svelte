@@ -27,7 +27,8 @@
         background: rgb(255, 255, 255);
         max-width: clamp(350px , 45vw , 650px);
         margin: 0 auto;
-        height: 90vh;
+        max-height: 90vh;
+        min-height: 90vh;
         margin-top: 5vh;
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
