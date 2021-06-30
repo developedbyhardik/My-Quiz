@@ -213,6 +213,8 @@ form {
     appearance: none;
     border: 2px solid var(--black-40);
     border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
   select:hover,select:focus{
