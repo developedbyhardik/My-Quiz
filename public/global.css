@@ -215,6 +215,7 @@ form {
     border-radius: 3px;
     -webkit-appearance: none;
     -moz-appearance: none;
+    background-color: white;
   }
 
   select:hover,select:focus{
