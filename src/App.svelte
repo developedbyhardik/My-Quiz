@@ -26,10 +26,8 @@
     .App{
         background: rgb(255, 255, 255);
         max-width: clamp(350px , 45vw , 650px);
-        margin: 0 auto;
-        max-height: 90vh;
-        min-height: 90vh;
-        margin-top: 5vh;
+        margin: 5vh auto;
+        min-height: calc(90vh - 1%);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
     }

@@ -36,6 +36,15 @@
         {return {...n,value:event.detail.selected}}
 
         )}  />
-
-    <button on:click={()=>isStart.set(true)}>Start Quiz</button>
+    <img as='button' alt='Start' src="/Assets/start.svg" class="start" on:click={()=>isStart.set(true)} />
 </div>
+
+<style>
+    .start{
+        width: 10%;
+        padding:12px 0;
+        font-size: 1rem;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+</style>

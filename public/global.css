@@ -215,12 +215,13 @@ form {
     border-radius: 3px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: var(--white-40);
+    background-color: var(--background);
     background-image: url('/Assets/down-arrow.png');
     background-repeat: no-repeat;
     background-size: 16px;
     background-position:right 15px top 50%;
     letter-spacing: 0.5px;
+    cursor: pointer;
   }
 
   select:hover,select:focus{
