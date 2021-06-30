@@ -215,9 +215,18 @@ form {
     border-radius: 3px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-color: white;
+    background-color: var(--white-40);
+    background-image: url('/Assets/down-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position:right 15px top 50%;
   }
 
   select:hover,select:focus{
     border: 2px solid black;
+    outline: none;
+  }
+
+  select option{
+    background-color: var(--white-20);
   }

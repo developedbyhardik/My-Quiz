@@ -23,7 +23,7 @@
         ((n)=>
         {return {...n,value:event.detail.selected}}
 
-        )}  />
+        )} />
     <DropDown options={SelectCategory} on:category={(event)=>category.update((n)=>
         {return {...n,value:event.detail.selected}}
 
