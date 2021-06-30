@@ -25,7 +25,7 @@
 
     .App{
         background: rgb(255, 255, 255);
-        max-width: 700px;
+        max-width: 650px;
         margin: 0 auto;
         min-height: 90vh;
         margin-top: 5vh;
@@ -37,7 +37,8 @@
         text-align: center;
     }
     .starter{
+        padding: 2rem;
         margin: 0 auto;
-        width: 400px;
+        width: cal(400px - 1%);
     }
 </style>

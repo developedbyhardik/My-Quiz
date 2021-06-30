@@ -220,6 +220,8 @@ form {
     background-repeat: no-repeat;
     background-size: 24px;
     background-position:right 15px top 50%;
+    font-weight: 550;
+    letter-spacing: 0.5px;
   }
 
   select:hover,select:focus{
@@ -229,4 +231,5 @@ form {
 
   select option{
     background-color: var(--white-20);
+    margin-top: 30px;
   }
