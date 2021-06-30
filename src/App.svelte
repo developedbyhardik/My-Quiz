@@ -25,7 +25,7 @@
 
     .App{
         background: rgb(255, 255, 255);
-        max-width: 650px;
+        max-width: clamp(350px , 45vw , 650px);
         margin: 0 auto;
         min-height: 90vh;
         margin-top: 5vh;
@@ -35,6 +35,7 @@
     .title{
         font-family: var(--bodyFont);
         text-align: center;
+        padding-top: 2rem;
     }
     .starter{
         padding: 2rem;
