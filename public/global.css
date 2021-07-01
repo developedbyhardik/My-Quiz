@@ -102,8 +102,8 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,9 +244,11 @@ form {
     margin: 1rem auto;
     padding: 0.5rem 0;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     cursor: pointer;
     background: none;
     border: 2px black dashed;
+    font-family: var(--bodyFont);
   }
 

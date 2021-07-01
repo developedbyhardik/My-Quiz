@@ -33,6 +33,7 @@
     import Loading from '../components/Loading.svelte'
     let questions = getQuizData();
     let currentQuestion = 0;
+    let isNext = false;
 
     function nextQuestion(){
         currentQuestion = currentQuestion + 1;
@@ -62,14 +63,16 @@
                         </div>
                         {#each data as question,i}
                             {#if currentQuestion===i}
-                                <Question {question} {nextQuestion} />
+                                <Question {question} on:next={()=>isNext=true } />
                             {/if}
                         {/each}
                     {:else}
                     <h2>We Have Not Sufficient Data Please Change The Category OR Choose Less Number Of Question</h2>
                 {/if}
-                <div>
-                    <button on:click={resetAll}>Go Back</button>
+                <div class="nav-button">
+                    <button class="setting" on:click={resetAll}><img src="/Assets/setting.svg" alt="Settings"></button>
+
+                    <button class="setting" disabled={!isNext}  on:click={isNext ? nextQuestion : null }><img src="/Assets/start.svg" alt="Next Que"></button>
                 </div>
                 {/await}
             </div>
@@ -78,6 +81,15 @@
     </div>
 
     <style>
+.nav-button{
+    display: flex;
+    justify-content: space-evenly;
+}
+        .setting{
+            width: 3rem;
+            border: none;
+            margin: 1rem;
+        }
 
   .score{
     margin-top: 1rem;

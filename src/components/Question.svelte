@@ -1,7 +1,7 @@
 <script>
     export let question;
-    export let nextQuestion;
     import {score} from '../store/Store.js'
+    import {createEventDispatcher} from 'svelte'
     let isAnswered = false;
     let isCorrect;
 
@@ -31,8 +31,11 @@
                 score.update(prev => prev + 1)
             }
             isAnswered = true;
+            dispatch('next')
         }
     }
+
+    const dispatch = createEventDispatcher();
 </script>
 
     <div class="question-bg">
@@ -52,12 +55,15 @@
         {#each allAnswers as answer}
         <button disabled={isAnswered} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
         {/each}
-        {#if isAnswered}
-            <button on:click={nextQuestion} >Next Question</button>
-        {/if}
     </div>
 
     <style>
+        .true{
+            border-color: rgb(0, 255, 0);
+        }
+        .false{
+            border-color: rgba(255, 0, 0, 0.452);
+        }
         .question-bg{
             border:2px solid black;
             margin: 1.5rem 1rem;
@@ -68,12 +74,13 @@
         .category{
             font-size: 1rem;
             border: 2px solid black;
+            margin: 0;
         }
 
         p{
             font-size: 1.2rem;
             padding: 0.4rem;
-            margin: 0;
+            margin: 1rem 0;
             border-radius: 5px;
             font-weight: bold;
             font-family: var(--bodyFont);
