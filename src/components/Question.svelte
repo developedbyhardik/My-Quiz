@@ -58,12 +58,7 @@
     </div>
 
     <style>
-        .true{
-            border-color: rgb(0, 255, 0);
-        }
-        .false{
-            border-color: rgba(255, 0, 0, 0.452);
-        }
+        
         .question-bg{
             border:2px solid black;
             margin: 1.5rem 1rem;
