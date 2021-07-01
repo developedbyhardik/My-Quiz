@@ -48,7 +48,7 @@ export const SelectCategory = [
     value:12
   },
   {
-    title:'Entertainment: Musicals & TheatresEntertainment: Television',
+    title:'Entertainment: Musicals & Theatres',
     value:13
   },
   {

@@ -24,7 +24,7 @@
         background: rgb(255, 255, 255);
         max-width: clamp(350px , 45vw , 650px);
         margin: 5vh auto;
-        min-height: calc(90vh - 1%);
+        min-height: 90vh;
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
     }

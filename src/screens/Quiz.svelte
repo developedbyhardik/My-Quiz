@@ -30,6 +30,7 @@
     import Question from '../components/Question.svelte'
     import {score,resetAll} from '../store/Store.js'
     import Modal from '../components/Modal.svelte'
+    import Loading from '../components/Loading.svelte'
     let questions = getQuizData();
     let currentQuestion = 0;
 
@@ -52,34 +53,36 @@
             {:else}
             <div>
                 {#await questions}
-                    Loading...
+                    <Loading/>
                 {:then data} 
-    
-                {#if data.length !=0}
-                    <div>
-                        <h3>#Question:{currentQuestion + 1}</h3>
-                        <h3>My Score:{$score}</h3>
-                    </div>
-                    {#each data as question,i}
-                        {#if currentQuestion===i}
-                            <Question {question} {nextQuestion} />
-                        {/if}
-                    {/each}
-                {:else}
+                    {#if data.length !=0}
+                        <div>
+                            <h4 style="margin-top: 1rem;">#Question: <span>{currentQuestion + 1}</span> </h4>
+                            <h4>My Score: <span>{$score}</span> </h4>
+                        </div>
+                        {#each data as question,i}
+                            {#if currentQuestion===i}
+                                <Question {question} {nextQuestion} />
+                            {/if}
+                        {/each}
+                    {:else}
                     <h2>We Have Not Sufficient Data Please Change The Category OR Choose Less Number Of Question</h2>
                 {/if}
-                {/await}
                 <div>
                     <button on:click={resetAll}>Go Back</button>
                 </div>
+                {/await}
             </div>
         {/if}
         
     </div>
 
     <style>
-        /* .quiz{
-
-        } */
-    
+  
+    h4{
+        padding: 0 1.2rem;
+        background-color: lightcoral;
+        font-size: 1.4rem;
+        width: 50%;
+    }
     </style>
