@@ -49,7 +49,7 @@
         padding-top: 2rem;
     }
     .start{
-        width: 10%;
+        width: 3.7rem;
         padding:12px 0;
         font-size: 1rem;
         margin: 0 auto;

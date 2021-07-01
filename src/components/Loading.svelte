@@ -11,7 +11,7 @@
 }
 
 .loading-bg{
-    width: 100%;
+  width: clamp(350px , 45vw , 650px);
     height: 90vh;
     display: flex;
     align-items: center;

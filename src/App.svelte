@@ -9,7 +9,9 @@
 
     <div class='App'>
         {#if $isStart}
+        <div class="quiz">
             <Quiz/>
+        </div>
         {:else}
         <div class="starter">
             <Starter />
@@ -22,8 +24,7 @@
 
     .App{
         background: rgb(255, 255, 255);
-        max-width: clamp(350px , 45vw , 650px);
-        margin: 5vh auto;
+        min-width: clamp(350px , 45vw , 650px);
         min-height: 90vh;
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
@@ -32,6 +33,11 @@
     .starter{
         padding: 2rem;
         margin: 0 auto;
-        width: cal(400px - 1%);
+        min-width: 400px;
     }
+
+    .quiz{
+        max-width: clamp(350px , 45vw , 650px);
+    min-height: 90vh;
+}
 </style>
