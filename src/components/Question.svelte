@@ -35,10 +35,10 @@
     }
 </script>
 
-    <div class="question">
-        <div>
-            <p>Category: {question.category}</p>
-        </div>
+    <div class="question-bg">
+       
+            <p class="category">Category: {question.category}</p>
+       
         {#if isAnswered}
             <h4>
                 {#if isCorrect}
@@ -48,7 +48,7 @@
                 {/if}
             </h4>
         {/if}
-        <h4>{@html question.question}</h4>
+        <p>{@html question.question}</p>
         {#each allAnswers as answer}
         <button disabled={isAnswered} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
         {/each}
@@ -58,10 +58,25 @@
     </div>
 
     <style>
-        .question{
-            background-color: lightblue;
+        .question-bg{
+            border:2px solid black;
             margin: 1.5rem 1rem;
             padding: 1rem;
             border-radius: var(--border-radius);
+        }
+
+        .category{
+            font-size: 1rem;
+            border: 2px solid black;
+        }
+
+        p{
+            font-size: 1.2rem;
+            padding: 0.4rem;
+            margin: 0;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: var(--bodyFont);
+            
         }
     </style>

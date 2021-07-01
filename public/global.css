@@ -102,7 +102,7 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -245,8 +245,8 @@ form {
     padding: 0.5rem 0;
     width: 100%;
     font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: 2px black dashed;
   }
 
-  span{
-    background-color: violet;
-  }

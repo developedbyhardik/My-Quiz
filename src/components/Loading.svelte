@@ -23,7 +23,7 @@
   height: 6rem;
   border: 5px solid var(--black-60);
   border-radius: 50%;
-  border-top-color: var(--black-20);
+  border-top-color: black;
   animation: spinner 0.6s linear infinite;
   margin: 0 auto;
 }

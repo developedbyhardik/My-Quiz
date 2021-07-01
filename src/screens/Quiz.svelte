@@ -56,9 +56,9 @@
                     <Loading/>
                 {:then data} 
                     {#if data.length !=0}
-                        <div>
-                            <h4 style="margin-top: 1rem;">#Question: <span>{currentQuestion + 1}</span> </h4>
-                            <h4>My Score: <span>{$score}</span> </h4>
+                        <div class="score">
+                            <h4>Question: <span >{currentQuestion + 1}</span> </h4>
+                            <h4>My Score: <span >{$score}</span> </h4>
                         </div>
                         {#each data as question,i}
                             {#if currentQuestion===i}
@@ -79,11 +79,24 @@
 
     <style>
 
-  
+  .score{
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    display: flex;
+  }
     h4{
-        padding: 0 1.2rem;
-        background-color: lightcoral;
-        font-size: 1.4rem;
-        width: 50%;
+        font-size: 1.2rem;
+        padding: 0.4rem;
+        margin: 0;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: var(--bodyFont);
+        border: 2px solid black;
     }
+    span{
+        padding: 0.25rem 0.6rem;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+    
     </style>
