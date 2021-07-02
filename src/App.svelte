@@ -24,9 +24,8 @@
 
 <style>
 .container{
-    width: 100%;
-    min-height: 100%;
-    background-color: lightblue;
+    max-width: 100vw;
+    min-height: 100vh;
     display: grid;
     justify-items: center;
     align-items: center;

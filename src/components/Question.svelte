@@ -1,6 +1,7 @@
 <script>
     export let question;
     import {score} from '../store/Store.js'
+    import {fade,fly} from 'svelte/transition'
     import {createEventDispatcher} from 'svelte'
     let isAnswered = false;
     let isCorrect;

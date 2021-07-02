@@ -97,14 +97,14 @@ html {
 }
 
 body {
-  background: var(--black);
+  background: var(--background);
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
   margin: 0;
   padding: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
   p {

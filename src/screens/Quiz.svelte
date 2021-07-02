@@ -37,6 +37,7 @@
 
     function nextQuestion(){
         currentQuestion = currentQuestion + 1;
+        isNext = false;
     }
 
 
@@ -45,10 +46,10 @@
     <div class="quiz">
         {#if (currentQuestion) == $amount.value}
             <Modal>
-                <h3>Very Good You Completed The Quiz 🔥🔥</h3>
-                <h2>Your Score : {$score}</h2>
+                <p>Very Good You Completed The Quiz 🔥</p>
+                <p>Your Score : {$score}</p>
                 {#if $score < ($amount.value / 2)}
-                   <h3>score doesn't matter you got knowledge that's matter</h3>
+                   <p>score doesn't matter you got knowledge that's matter</p>
                 {/if}
             </Modal>
             {:else}
@@ -63,7 +64,9 @@
                         </div>
                         {#each data as question,i}
                             {#if currentQuestion===i}
+                            <div class="animation" >
                                 <Question {question} on:next={()=>isNext=true } />
+                            </div>
                             {/if}
                         {/each}
                     {:else}
@@ -80,35 +83,37 @@
         
     </div>
 
+
     <style>
-.nav-button{
-    display: flex;
-    justify-content: space-evenly;
-}
+
+        .nav-button{
+            display: flex;
+            justify-content: space-evenly;
+        }
         .setting{
             width: 3rem;
             border: none;
             margin: 1rem;
         }
 
-  .score{
-    margin-top: 1rem;
-    justify-content: space-evenly;
-    display: flex;
-  }
-    h4{
-        font-size: 1.2rem;
-        padding: 0.4rem;
-        margin: 0;
-        border-radius: 5px;
-        font-weight: bold;
-        font-family: var(--bodyFont);
-        border: 2px solid black;
-    }
-    span{
-        padding: 0.25rem 0.6rem;
-        border-radius: 50%;
-        border: 2px solid black;
-    }
+        .score{
+            margin-top: 1rem;
+            justify-content: space-evenly;
+            display: flex;
+                }
+            h4{
+                font-size: 1.2rem;
+                padding: 0.4rem;
+                margin: 0;
+                border-radius: 5px;
+                font-weight: bold;
+                font-family: var(--bodyFont);
+                border: 2px solid black;
+            }
+            span{
+                padding: 0.25rem 0.6rem;
+                border-radius: 50%;
+                border: 2px solid black;
+            }
     
     </style>
