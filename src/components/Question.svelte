@@ -54,12 +54,18 @@
         {/if}
         <p>{@html question.question}</p>
         {#each allAnswers as answer}
-        <button disabled={isAnswered} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
+        <button disabled={isAnswered} class={ isAnswered ? (isCorrect?'true':'false'):''} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
         {/each}
     </div>
 
     <style>
-        
+
+        .true{
+            border-color: rgb(9, 233, 9);
+        }
+        .false{
+            border-color: rgb(207, 18, 18);
+        }
         .question-bg{
             border:2px solid black;
             margin: 1.5rem 1rem;
