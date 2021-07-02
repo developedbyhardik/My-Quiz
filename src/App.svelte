@@ -28,7 +28,6 @@
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
         border: 2px solid black;
-        margin: 2rem 0;
     }
  
     .starter{

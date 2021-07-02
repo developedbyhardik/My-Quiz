@@ -97,17 +97,17 @@ html {
 }
 
 body {
-  margin: 0;
-	background: var(--background);
+  background: var(--background);
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
   min-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+  margin: 0;
+}
 
   p {
 	margin-bottom: 1.5rem;
