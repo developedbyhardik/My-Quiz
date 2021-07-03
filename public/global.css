@@ -71,6 +71,7 @@ html {
   --bodyFont: "dank_monoregular", sans-serif;
   --styedFont:"dank_monoitalic",sans-serif;
 
+
   /* Define Font Size  */
   --small-text: 0.8em;
   --h1: 3.052rem;
@@ -81,6 +82,7 @@ html {
 
   /* Other Var  */
   --border-radius:0.25rem;
+  --border:2px solid black;
   --max-width:1120px;
   --fixed-width:550px;
   --letter-spacing: 1px;

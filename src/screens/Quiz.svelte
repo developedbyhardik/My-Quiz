@@ -108,12 +108,12 @@
                 border-radius: 5px;
                 font-weight: bold;
                 font-family: var(--bodyFont);
-                border: 2px solid black;
+                border: var(--border);
             }
             span{
                 padding: 0.25rem 0.6rem;
                 border-radius: 50%;
-                border: 2px solid black;
+                border: var(--border);
             }
     
     </style>

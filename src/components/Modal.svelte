@@ -17,7 +17,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.4);
         display: grid;
         justify-items: center;
         align-items: center;
@@ -30,6 +30,7 @@
         font-family: var(--bodyFont);
         font-weight: bold;
         width: clamp(350px , 45vw , 600px);
+        border: var(--border);
     }
 
     button{
@@ -39,6 +40,6 @@
         height: var(--size);
         position: absolute;
         right: 0;
-        top: calc(var(--size) / 2 * -2.5)
+        top: calc(var(--size) / 2 * -2.5);
     }
 </style>

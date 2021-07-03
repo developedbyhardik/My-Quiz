@@ -43,18 +43,9 @@
        
             <p class="category">Category: {question.category}</p>
        
-        {#if isAnswered}
-            <h4>
-                {#if isCorrect}
-                    You Got Right One 🔥
-                    {:else}
-                    You Goofed Up 😢
-                {/if}
-            </h4>
-        {/if}
         <p>{@html question.question}</p>
         {#each allAnswers as answer}
-        <button disabled={isAnswered} class={ isAnswered ? (isCorrect?'true':'false'):''} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
+        <button disabled={isAnswered} class={ isAnswered ? answer.correct:''} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
         {/each}
     </div>
 
@@ -67,7 +58,7 @@
             border-color: rgb(207, 18, 18);
         }
         .question-bg{
-            border:2px solid black;
+            border: var(--border);
             margin: 1.5rem 1rem;
             padding: 1rem;
             border-radius: var(--border-radius);
@@ -75,7 +66,7 @@
 
         .category{
             font-size: 1rem;
-            border: 2px solid black;
+            border: var(--border);
             margin: 0;
         }
 
