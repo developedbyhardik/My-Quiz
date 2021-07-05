@@ -41,7 +41,7 @@
 
     <div class="question-bg">
        
-            <p class="category">Category: {question.category}</p>
+            <p class="category">Category:- {question.category}</p>
        
         <p>{@html question.question}</p>
         {#each allAnswers as answer}
