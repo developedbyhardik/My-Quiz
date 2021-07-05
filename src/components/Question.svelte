@@ -52,10 +52,10 @@
     <style>
 
         .true{
-            border-color: rgb(7, 109, 7);
+            border-color: rgb(13, 196, 13);
         }
         .false{
-            border-color: rgb(139, 11, 11);
+            border-color: rgb(197, 17, 17);
         }
         .question-bg{
             border: var(--border);
