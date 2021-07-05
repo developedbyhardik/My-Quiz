@@ -25,7 +25,7 @@
 <style>
 
     .App{
-        background: rgb(179, 100, 100);
+        background: rgb(153, 129, 129);
         width: clamp(350px , 45vw , 600px);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
