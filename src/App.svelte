@@ -29,6 +29,7 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    background-color: green;
 }
     .App{
         background: rgb(255, 255, 255);
