@@ -1,9 +1,22 @@
 <script>
     import {resetAll} from '../store/Store.js'
+    import {fly} from 'svelte/transition'
+    import {elasticOut} from 'svelte/easing'
+
+    function modalAnimation(){
+        return {
+            css:(t)=>{
+                return `
+                opacity:${t};
+                `
+            },
+            easing:elasticOut,
+        }
+    }
 </script>
 
-<div class="modal-bg">
-    <div class="modal">
+<div class="modal-bg" >
+    <div class="modal" transition:modalAnimation>
         <button on:click={resetAll}><img src="Assets/cancel.png" alt="close"></button>
         <slot/>
     </div>

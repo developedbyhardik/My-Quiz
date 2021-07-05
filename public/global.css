@@ -107,8 +107,12 @@ body {
 	color: #000000;
   margin: 0;
   padding: 0;
+  background-color: var(--white-60);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   p {
@@ -254,4 +258,3 @@ form {
     border: 2px black dashed;
     font-family: var(--bodyFont);
   }
-

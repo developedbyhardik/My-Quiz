@@ -6,7 +6,7 @@
     } from './store/Store.js'
 </script>
 
-<div class="container">
+<body>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
@@ -18,19 +18,12 @@
         </div>
         {/if}
     </div>
-</div>
+</body>
     
 
 
 <style>
-.container{
-    background-color: var(--white-60);
-    max-width: 100vw;
-    min-height: 100vh;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
+
     .App{
         background: rgb(255, 255, 255);
         width: clamp(350px , 45vw , 600px);
@@ -49,4 +42,6 @@
     .quiz{
         max-width: clamp(350px , 45vw , 600px);
 }
+
+    
 </style>

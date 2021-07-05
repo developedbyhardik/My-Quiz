@@ -64,7 +64,7 @@
                         </div>
                         {#each data as question,i}
                             {#if currentQuestion===i}
-                            <div class="animation" >
+                            <div>
                                 <Question {question} on:next={()=>isNext=true } />
                             </div>
                             {/if}
