@@ -24,12 +24,12 @@
 
 <style>
 .container{
+    background-color: var(--white-60);
     max-width: 100vw;
     min-height: 100vh;
     display: grid;
     justify-items: center;
     align-items: center;
-    background-color: green;
 }
     .App{
         background: rgb(255, 255, 255);
