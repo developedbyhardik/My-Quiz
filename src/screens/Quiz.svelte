@@ -70,7 +70,7 @@
                             {/if}
                         {/each}
                     {:else}
-                    <h2>We Have Not Sufficient Data Please Change The Category OR Choose Less Number Of Question</h2>
+                    <h2 class='error'>We Have Not Sufficient Data Please Change The Category OR Choose Less Number Of Question</h2>
                 {/if}
                 <div class="nav-button">
                     <button class="setting" on:click={resetAll}><img src="/Assets/setting.svg" alt="Settings"></button>
@@ -85,6 +85,13 @@
 
 
     <style>
+
+        .error{
+            font-family: var(--bodyFont);
+            font-size: 1.5rem;
+            text-align: center;
+            color: var(--red);
+        }
 
         .nav-button{
             display: flex;
