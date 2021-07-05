@@ -113,6 +113,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  position: absolute;
 }
 
   p {
