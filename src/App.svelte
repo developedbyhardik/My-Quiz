@@ -29,9 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh;
-  width: 100vw; */
+  min-height: 100vh;
+  width: 100vw;
   background-color: rgb(218, 97, 157);
+  z-index: 10;
 }
     .App{
         background: var(--white);
