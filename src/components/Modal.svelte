@@ -27,7 +27,7 @@
     }
     .modal{
         position: relative;
-        background: white;
+        background: var(--background);
         padding: 20px;
         border-radius: 15px;
         font-family: var(--bodyFont);
