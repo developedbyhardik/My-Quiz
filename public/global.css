@@ -17,15 +17,17 @@
 
 }
 
-
 *,
 ::after,
 ::before {
   box-sizing: border-box;
 }
 
-html {
+html,body{
   font-size: 100%;
+  height: -webkit-fill-available;
+  margin: 0;
+  padding: 0;
 } /*16px*/
 
 :root {
@@ -84,12 +86,7 @@ html {
   --h5: 1.25rem;
 
   /* Other Var  */
-  --border-radius:0.25rem;
   --border:2px solid black;
-  --max-width:1120px;
-  --fixed-width:550px;
-  --letter-spacing: 1px;
-  --transtion: 0.3s ease-in-out all;
 
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -105,14 +102,9 @@ body {
 	font-weight: 400;
 	line-height: 1.5;
 	color: #000000;
-  margin: 0;
-  padding: 0;
   background-color: var(--white-60);
-  width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100vw;
 }
 
   p {

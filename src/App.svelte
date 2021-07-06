@@ -6,7 +6,7 @@
     } from './store/Store.js'
 </script>
 
-<body>
+<div class='container'>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
@@ -18,19 +18,27 @@
         </div>
         {/if}
     </div>
-</body>
+</div>
     
 
 
 <style>
-
+.container{
+    margin: 0;
+    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hotpink;
+}
     .App{
-        background: rgb(153, 129, 129);
+        background: var(--white);
         width: clamp(350px , 45vw , 600px);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
         border: 2px solid black;
-        margin: 2rem auto;
+        margin: 2rem 0;
     }
  
     .starter{
@@ -43,5 +51,4 @@
         max-width: clamp(350px , 45vw , 600px);
 }
 
-    
 </style>
