@@ -40,9 +40,7 @@
 </script>
 
     <div class="question-bg">
-       
-            <p class="category">Category:- {question.category}</p>
-       
+        <p class="category">Category:- {question.category}</p>
         <p>{@html question.question}</p>
         {#each allAnswers as answer}
         <button disabled={isAnswered} class={ isAnswered ? answer.correct:''} on:click={()=>checkAnswer(answer)}>{@html answer.answer}</button>
