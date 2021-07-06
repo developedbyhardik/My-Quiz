@@ -60,12 +60,14 @@
             margin: 1.5rem 1rem;
             padding: 1rem;
             border-radius: var(--border-radius);
+            background: var(--background);
         }
 
         .category{
             font-size: 1rem;
             border: var(--border);
             margin: 0;
+            background: var(--main);
         }
 
         p{

@@ -86,6 +86,10 @@
 
     <style>
 
+        .quiz{
+            background: var(--main);
+        }
+
         .error{
             font-family: var(--bodyFont);
             font-size: 1.5rem;
@@ -101,6 +105,7 @@
             width: 3rem;
             border: none;
             margin: 1rem;
+            color: var(--font-color);
         }
 
         .score{
@@ -116,11 +121,13 @@
                 font-weight: bold;
                 font-family: var(--bodyFont);
                 border: var(--border);
+                background: var(--background);
             }
             span{
                 padding: 0.25rem 0.6rem;
                 border-radius: 50%;
                 border: var(--border);
+                background: var(--main);
             }
     
     </style>

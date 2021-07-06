@@ -7,11 +7,9 @@
         isStart
     } from './store/Store.js'
 
-    console.log(Viewport.Height)
-
 </script>
 
-<div class='container' style={`min-height:${Viewport.Height}px;background:red`}>
+<div class='container' style={`min-height:${Viewport.Height}px;`}>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
@@ -34,17 +32,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh; */
-  width: 100vw;
-  background-color: rgb(218, 97, 157);
+  background-color: var(--background);
   z-index: 10;
+  resize: vertical;
 }
     .App{
-        background: var(--white);
+        background: var(--main);
         width: clamp(350px , 45vw , 600px);
         border-radius: var(--border-radius);
         box-shadow: var(--shadow-2);
-        border: 2px solid black;
+        border: var(--border);
         margin: 2rem 0;
     }
  

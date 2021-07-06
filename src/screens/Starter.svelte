@@ -54,5 +54,6 @@
         font-size: 1rem;
         margin: 0 auto;
         cursor: pointer;
+        color: var(--font-color);
     }
 </style>

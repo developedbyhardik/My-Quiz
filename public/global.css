@@ -66,7 +66,11 @@ html,body{
   --white: #fff;
 
   /*Define Colors Intentions */
-  --background: var(--lightgrey);
+  --background: #d4d8f0;
+  --card-bg:#fffffe;
+  --border:2px solid #121629;
+  --font-color:#121629;
+  --main:#b8c1ec;
 
   /* Theme-Color  */
 
@@ -87,7 +91,6 @@ html,body{
 
   /* Other Var  */
   --border-radius:0.25em;
-  --border:2px solid black;
 
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -102,7 +105,7 @@ html,body{
 body {
 	font-weight: 400;
 	line-height: 1.5;
-	color: #000000;
+	color: var(--font-color);
   background-color: var(--white-60);
 }
 
@@ -227,7 +230,7 @@ form {
   }
 
   select:hover,select:focus{
-    border: 2px solid black;
+    border: 2px solid var(--font-color);
     outline: none;
   }
 
@@ -246,6 +249,6 @@ form {
     font-weight: 600;
     cursor: pointer;
     background: none;
-    border: 2px black dashed;
+    border: 2px #121629 dashed;
     font-family: var(--bodyFont);
   }
