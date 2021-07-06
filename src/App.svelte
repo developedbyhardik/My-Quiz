@@ -1,12 +1,17 @@
+<script context='module'>
+  import Viewport from 'svelte-viewport-info'
+</script>
+
 <script>
     import Starter from './screens/Starter.svelte'
     import Quiz from './screens/Quiz.svelte'
     import {
         isStart
     } from './store/Store.js'
+
 </script>
 
-<div class='container'>
+<div class='container' style='min-height:{Viewport.Height};'>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
@@ -29,10 +34,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100vw;
   background-color: rgb(218, 97, 157);
   z-index: 10;
+  resize: vertical;
 }
     .App{
         background: var(--white);
