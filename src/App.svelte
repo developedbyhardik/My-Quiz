@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: hotpink;
+  background-color: rgb(218, 97, 157);
 }
     .App{
         background: var(--white);
