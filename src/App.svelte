@@ -1,17 +1,17 @@
-<script context='module'>
-  import Viewport from 'svelte-viewport-info'
-</script>
 
 <script>
+    import Viewport from 'svelte-viewport-info'
     import Starter from './screens/Starter.svelte'
     import Quiz from './screens/Quiz.svelte'
     import {
         isStart
     } from './store/Store.js'
 
+    console.log(Viewport.Height)
+
 </script>
 
-<div class='container' style='min-height:{Viewport.Height};'>
+<div class='container' style={`min-height:${Viewport.Height}px;background:red`}>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
@@ -38,7 +38,6 @@
   width: 100vw;
   background-color: rgb(218, 97, 157);
   z-index: 10;
-  resize: vertical;
 }
     .App{
         background: var(--white);
