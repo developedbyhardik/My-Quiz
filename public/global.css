@@ -252,3 +252,7 @@ form {
     border: 2px #121629 dashed;
     font-family: var(--bodyFont);
   }
+
+  button:disabled{
+    color:var(--font-color)
+  }

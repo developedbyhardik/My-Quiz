@@ -46,7 +46,7 @@
     <div class="quiz">
         {#if (currentQuestion) == $amount.value}
             <Modal>
-                <p>Very Good You Completed The Quiz 🔥</p>
+                <p>You Completed The Quiz 🔥🔥</p>
                 <p>Your Score : {$score}</p>
                 {#if $score < ($amount.value / 2)}
                    <p>score doesn't matter you got knowledge that's matter</p>
@@ -94,7 +94,9 @@
             font-family: var(--bodyFont);
             font-size: 1.5rem;
             text-align: center;
-            color: var(--red);
+            background: var(--main);
+            height: 350px;
+            color: var(--font-color);
         }
 
         .nav-button{

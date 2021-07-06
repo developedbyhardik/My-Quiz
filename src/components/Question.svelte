@@ -50,10 +50,10 @@
     <style>
 
         .true{
-            border-color: rgb(13, 196, 13);
+            color:var(--font-color);
         }
         .false{
-            border-color: rgb(197, 17, 17);
+            color:var(--background);
         }
         .question-bg{
             border: var(--border);

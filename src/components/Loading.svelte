@@ -23,7 +23,7 @@
 .loading {
   width: 6rem;
   height: 6rem;
-  border: 5px solid var(--black-60);
+  border: 5px solid var(--background);
   border-radius: 50%;
   border-top-color: var(--font-color);
   animation: spinner 0.6s linear infinite;
