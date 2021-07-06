@@ -256,3 +256,11 @@ form {
   button:disabled{
     color:var(--font-color)
   }
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #646262;
+  border-radius: 0.5rem;
+}

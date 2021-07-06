@@ -97,6 +97,7 @@
             background: var(--main);
             height: 350px;
             color: var(--font-color);
+            padding: 2rem;
         }
 
         .nav-button{
