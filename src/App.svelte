@@ -9,7 +9,7 @@
 
 </script>
 
-<div class='container' style={`min-height:${Viewport.Height-1}px;`}>
+<div class='container' style={`min-height:${Viewport.Height-0.5}px;`}>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
