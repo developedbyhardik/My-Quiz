@@ -253,9 +253,6 @@ form {
     font-family: var(--bodyFont);
   }
 
-  button:disabled{
-    color:var(--font-color)
-  }
 
 *::-webkit-scrollbar {
   width: 5px;
