@@ -9,7 +9,7 @@
 
 </script>
 
-<div class='container' style={`min-height:${Viewport.Height}px;`}>
+<div class='container' style={`min-height:${Viewport.Height-1}px;`}>
     <div class='App'>
         {#if $isStart}
         <div class="quiz">
@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--background);
+  background-color: red;
   z-index: 10;
   resize: vertical;
 }
