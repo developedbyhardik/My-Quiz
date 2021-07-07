@@ -52,6 +52,9 @@
         .true{
             color:var(--font-color);
         }
+        .false{
+            border-color: grey;
+        }
         .question-bg{
             border: var(--border);
             margin: 1.5rem 1rem;
