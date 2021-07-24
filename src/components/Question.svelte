@@ -39,7 +39,7 @@
     const dispatch = createEventDispatcher();
 </script>
 
-    <div class="question-bg" transition:slide>
+    <div class="question-bg" in:fly={{y:100,duration:300}}>
         <p class="category">Category:- {question.category}</p>
         <p>{@html question.question}</p>
         {#each allAnswers as answer}
