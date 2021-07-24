@@ -1,7 +1,7 @@
 <script>
     export let question;
     import {score} from '../store/Store.js'
-    import {fade,fly} from 'svelte/transition'
+    import {fade,fly,slide} from 'svelte/transition'
     import {createEventDispatcher} from 'svelte'
     let isAnswered = false;
     let isCorrect;
@@ -39,7 +39,7 @@
     const dispatch = createEventDispatcher();
 </script>
 
-    <div class="question-bg">
+    <div class="question-bg" transition:slide>
         <p class="category">Category:- {question.category}</p>
         <p>{@html question.question}</p>
         {#each allAnswers as answer}

@@ -1,11 +1,11 @@
 <script>
     import {resetAll} from '../store/Store.js'
-    import {elasticOut} from 'svelte/easing'
+    import {fly} from 'svelte/transition'
 
 </script>
 
 <div class="modal-bg" >
-    <div class="modal">
+    <div class="modal" transition:fly={{y:200}}>
         <button on:click={resetAll}><img src="Assets/cancel.png" alt="close"></button>
         <slot/>
     </div>
