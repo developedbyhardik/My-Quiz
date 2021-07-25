@@ -51,10 +51,10 @@
 
         .true{
             color:var(--font-color);
-            border-color: green;
+            border-color: #29e610;
         }
         .false{
-            border-color: red;
+            border-color: #e63f10;
         }
         .question-bg{
             border: var(--border);
