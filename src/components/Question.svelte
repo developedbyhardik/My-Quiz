@@ -39,7 +39,7 @@
     const dispatch = createEventDispatcher();
 </script>
 
-    <div class="question-bg" in:fly={{y:100,duration:300}}>
+    <div class="question-bg" in:fly={{y:100,duration:500}}>
         <p class="category">Category:- {question.category}</p>
         <p>{@html question.question}</p>
         {#each allAnswers as answer}
@@ -51,9 +51,10 @@
 
         .true{
             color:var(--font-color);
+            border-color: green;
         }
         .false{
-            border-color: grey;
+            border-color: red;
         }
         .question-bg{
             border: var(--border);
